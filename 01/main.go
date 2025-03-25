@@ -54,7 +54,7 @@ func main() {
 func addStrToArray(num string, listInts *[]int) {
 	intNum, err := strconv.Atoi(num)
 	if err != nil {
-		log.Fatalf("Unable to convert string %s to intL %s", intNum, err)
+		log.Fatalf("Unable to convert string %s to int: %s", intNum, err)
 	}
 	*listInts = append(*listInts, intNum)
 }
